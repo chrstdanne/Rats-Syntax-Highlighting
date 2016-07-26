@@ -22,7 +22,7 @@ To install the package in Sublime Text,
  
 To install the package Atom, 
 - unzip langugage-Rats.tar.gz and copy it into your packages directory. 
-- If you do not know where your package directory is located, hit Crtl+Comma to open Settings. You will find the package directory path under Install. 
+- If you do not know where your package directory is located, hit Crtl+Comma to open Settings in Atom. You will find the package directory path under Install. 
 - Close and re-open Atom. 
 - Hit Crtl+Shift+L and check if Rats shows up under Grammars. 
 
