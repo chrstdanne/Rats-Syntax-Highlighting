@@ -1,0 +1,55 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Rats
+scopeName: source.rats
+fileTypes: [rpf]
+uuid: 73530c50-21a8-408d-93b8-d2eb74d5d1f6
+
+patterns:
+- comment: punctuation.definition.comment.rats
+  name: comment.line.number-sign.rats
+  match: '^\s*(\*).*$\n?'
+
+- comment: string.quoted.single.rats
+  name: comment.line.number-sign.rats
+  begin: /\*
+  end: \*/
+
+- comment: punctuation.definition.comment.rats
+  name: comment.line.number-sign.rats
+  match: '(\;\*).*$\n?'
+
+- comment: sourced.routine
+  name: constant.numeric.rats
+  match: \@([A-Za-z][A-Za-z0-9_]+)
+    
+- comment: inbuild.rats.function
+  name: constant.numeric.rats
+  match: \%([A-Za-z][A-Za-z0-9_]+)
+
+- comment: inbuild.rats.operator
+  name: keyword.operator.rats
+  match: '(\-|\+|\*|\/|\^|\_=|;|\=)'
+
+- comment: inbuild.rats.list
+  name: keyword.list.rats
+  match: '(\$|\#|\&)'
+
+- comment: inbuild.rats.logical
+  name: keyword.logical.rats
+  match: \b(and|AND|eq|EQ|ge|GE|gt|GT|le|LE|lt|LT|ne|NE|not|NOT|or|OR)\b
+
+- comment: strings.rats
+  name: string.quoted.double.rats
+  begin: '"'
+  end: '"'
+ 
+- comment: string.quoted.single.rats
+  name: string.quoted.single.rats
+  begin: ''''
+  end: ''''
+ 
+- comment: command.control
+  match: \b(ALL|all|accumulate|ACCUMULATE|adaptive|ADAPTIVE|akaike|AKAIKE|allocate|ALLOCATE|ar1|AR1|arch|ARCH|ardl|ARDL|arellano|ARELLANO|ARFIMA|arfima|arima|ARIMA|arma|ARMA|armax|ARMAX|associate|ASSOCIATE|bekk|BEKK|bfgs|BFGS|bhhh|BHHH|bonds|BONDS|boot|BOOT|boxjenk|BOXJENK|branch|BRANCH|break|BREAK|caccumulate|CACCUMULATE|cadd|CADD|cagan|CAGAN|calendar|CALENDAR|canmodel|CANMODEL|cards|CARDS|catalog|CATALOG|cats|CATS|cdf|CDF|cdivide|CDIVIDE|cexp|CEXP|change|CHANGE|choice|CHOICE|chow1|CHOW1|chow2|CHOW2|citibase|CITIBASE|clabels|CLABELS|clear|CLEAR|cln|CLN|close|CLOSE|cluster|CLUSTER|cmask|CMASK|cmom|CMOM|cmoment|CMOMENT|cmultiply|CMULTIPLY|cmve|CMVE|cointtst|COINTTST|complex|COMPLEX|compute|COMPUTE|comp|COMP|condition|CONDITION|conjugate|CONJUGATE|constant|CONSTANT|consumer|CONSUMER|copy|COPY|correlate|CORRELATE|cprint|CPRINT|create|CREATE|cross|CROSS|crsp|CRSP|csample|CSAMPLE|cscale|CSCALE|cset|CSET|csqrt|CSQRT|csubtract|CSUBTRACT|ctor|CTOR|cusum|CUSUM|cvmodel|CVMODEL|cxtremum|CXTREMUM|damp|DAMP|data|DATA|dbox|DBOX|dccgarch|DCCGARCH|ddv|DDV|debug|DEBUG|declare|DECLARE|dec|DEC|dedit|DEDIT|define|DEFINE|delete|DELETE|density|DENSITY|deterministic|DETERMINISTIC|diebp210|DIEBP210|diebp228|DIEBP228|diebp235|DIEBP235|dif|DIF|difference|DIFFERENCE|dimension|DIMENSION|dim|DIM|display|DISPLAY|disp|DISP|distriblag|DISTRIBLAG|dlm|DLM|dlmexam1|DLMEXAM1|dlmexam2|DLMEXAM2|dlmexam3|DLMEXAM3|dlmexam4|DLMEXAM4|do|DO|dofor|DOFOR|dsge|DSGE|dta|DTA|dummy|DUMMY|ect|ECT|edit|EDIT|egarch|EGARCH|eigen|EIGEN|else|ELSE|emexample|EMEXAMPLE|encode|ENCODE|end|END|end(system)|END(SYSTEM)|enter|ENTER|ENVIRONMENT|environment|equation|EQUATION|eqv|EQV|errors|ERRORS|esmooth|ESMOOTH|estar|ESTAR|estimate|ESTIMATE|ewise|EWISE|exclude|EXCLUDE|execute|EXECUTE|exp|EXP|expsmooth1|EXPSMOOTH1|expsmooth2|EXPSMOOTH2|extremum|EXTREMUM|factor|FACTOR|FAME|famefree|fft|FFT|filter|FILTER|fiml|FIML|find|FIND|fix|FIX|fixed|FIXED|float|FLOAT|fmatrix|FMATRIX|fold|FOLD|forecast|FORECAST|format|FORMAT|fortran|FORTRAN|fpe|FPE|fractint|FRACTINT|fred|FRED|free|FREE|freqdeseason|FREQDESEASON|frequency|FREQUENCY|frml|FRML|frmls|FRMLs|function|FUNCTION|garch|GARCH|garchboot|GARCHBOOT|garchgibbs|GARCHGIBBS|garchimport|GARCHIMPORT|garchmv|GARCHMV|garchmvmax|GARCHMVMAX|garchuv|GARCHUV|garchuvmax|GARCHUVMAX|gbox|GBOX|gcontour|GCONTOUR|ged|GED|gev|GEV|gibbs|GIBBS|giv|GIV|gls|GLS|gmm|GMM|goto|GOTO|graph|GRAPH|graphboxplot|GRAPHBOXPLOT|graphforecast|GRAPHFORECAST|graphfunction|GRAPHFUNCTION|graphhighlow|GRAPHHIGHLOW|graphoverlay|GRAPHOVERLAY|group|GROUP|grparm|GRPARM|grtext|GRTEXT|gset|GSET|hac|HAC|halt|HALT|hamilton|HAMILTON|hannan|HANNAN|hansen|HANSEN|hausman|HAUSMAN|haver|HAVER|hetero|HETERO|history|HISTORY|hpfilter|HPFILTER|if|IF|ift|IFT|igarch|IGARCH|impulse|IMPULSE|impulses|IMPULSES|include|INCLUDE|infobox|INFOBOX|initial|INITIAL|input|INPUT|inquire|INQUIRE|instrument|INSTRUMENT|instruments|INSTRUMENTS|integer|INTEGER|intervention|INTERVENTION|inv|INV|johnp121|JOHNP121|jrobust|JROBUST|kalman|KALMAN|keyboard|KEYBOARD|kfset|KFSET|klein|KLEIN|label|LABEL|labels|LABELS|lad|LAD|lags|LAGS|ldv|LDV|lgt|LGT|linreg|LINREG|list|LIST|LOCAL|local|log|LOG|loop|LOOP|lowess|LOWESS|lqprog|LQPROG|lstar|LSTAR|lwindow|LWINDOW|mad|MAD|make|MAKE|markov|MARKOV|mask|MASK|matlab|MATLAB|maximize|MAXIMIZE|mcov|MCOV|mcpriceeurope|MCPRICEEUROPE|medit|MEDIT|menu|MENU|menu/choice|MENU/CHOICE|messagebox|MESSAGEBOX|model|MODEL|models|MODELS|montearch|MONTEARCH|montesvar|MONTESVAR|montevar|MONTEVAR|mrestrict|MRESTRICT|MVSTATS|mvstats|mwhp366|MWHP366|neural|NEURAL|next|NEXT|nlls|NLLS|nlpar|NLPAR|nlsystem|NLSYSTEM||nnlearn|NNLEARN|nntest|NNTEST|nonlin|NONLIN|nonlinear|NONLINEAR|npreg|NPREG|odbc|ODBC|oecd|OECD|olsmenu|OLSMENU|onebreak|ONEBREAK|onlyif|ONLYIF|open|OPEN|OPG|opg|optimalweights|OPTIMALWEIGHTS|option|OPTION|order|ORDER|organization|ORGANIZATION|output|OUTPUT|overlay|OVERLAY|panel|PANEL|parmset|PARMSET|parmsets|PARMSETS|pdl|PDL|pform|PFORM|pict|PICT|plot|PLOT|polar|POLAR|portable|PORTABLE|portfolio|PORTFOLIO|prbit|PRBIT|pregress|PREGRESS|presample|PRESAMPLE|print|PRINT|printer|PRINTER|prj|PRJ|ORG|org|probit|PROBIT|procedure|PROCEDURE|prtdata|PRTDATA|pstats|PSTATS|q|Q|qmle|QMLE|qprog|QPROG|qr|QR|query|QUERY|quit|QUIT|qz|QZ|randomize|RANDOMIZE|ratio|RATIO|ratsdata|RATSDATA|rbc|RBC|read|READ|real|REAL|rectangular|RECTANGULAR|RECT|rect|regarima|RegARIMA|reject|REJECT|release|RELEASE|rename|RENAME|report|REPORT|reset|RESET|restrict|RESTRICT|return|RETURN|rewind|REWIND|rls|RLS|robust|ROBUST|robusterrors|ROBUSTERRORS|rreg|RREG|RTOC|rtoc|sample|SAMPLE|save|SAVE|scatter|SCATTER|screen|SCREEN|seasonal|SEASONAL|seed|SEED|select|SELECT|SET|set|setar|SETAR|shocks|SHOCKS|show|SHOW|simplerbc|SIMPLERBC|simuladd|SIMULADD|simulate|SIMULATE|simulest|SIMULEST|simulfor|SIMULFOR|simulmul|SIMULMUL|SMPL|smpl|source|SOURCE|specfore|SPECFORE|specify|SPECIFY|spgraph|SPGRAPH|spread|SPREAD|sstats|SSTATS|star|STAR|start|START|statistics|STATISTICS|steps|STEPS|store|STORE|stwise|STWISE|summarize|SUMMARIZE|sur|SUR|sv|SV|SWAMY|swamy|swarch|SWARCH|sweep|SWEEP|symmetric|SYMMETRIC|system|SYSTEM|table|TABLE|taper|TAPER|tar|TAR|theil|THEIL|tobit|TOBIT|trace|TRACE|trfunction|TRFUNCTION|tring|TRING|tsayp149|TSAYP149|tsd|TSD|tvarying|TVARYING|type|TYPE|uc|UC|uforecast|UFORECAST|union|UNION|unravel|UNRAVEL|until|UNTIL|update|UPDATE|usermenu|USERMENU|vadd|VADD|var|VAR|varcause|VARCAUSE|variables|VARIABLES|varlag|VARLAG|vcv|VCV|vector|vector|VECTOR|vreplace|VREPLACE|wf1|WF1|while|WHILE|window|WINDOW|wks|WKS|wmatrix|WMATRIX|write|WRITE|x11|X11|xls|XLS|xlsx|XLSX|zumean|ZUMEAN|form|FORM|FOR|for|results|RESULTS|sqrt|SQRT)\b
+  name: keyword.control.rats
+...
