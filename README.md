@@ -16,7 +16,7 @@ If you have suggestions or find any errors, such as missing key words, please co
 ###Installation instructions
 To install the package in Sublime Text, 
 - unzip the Rats.tar.gz file contained in this directory and copy it into your packages directory. 
-- If you do not know where your package directory is located, hit Crtl+ to open the console in Sublime Text to get the path. 
+- If you do not know where your package directory is located, hit Crtl+ to open the console in Sublime Text and type ``sublime.packages_path()`` to get the path. 
 - Close and re-open Sublime Text and Rats should show up under View -> Syntax
 
  
