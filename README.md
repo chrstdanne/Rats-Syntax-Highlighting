@@ -16,13 +16,14 @@ If you have suggestions or find any errors, such as missing key words, please co
 ###Installation instructions
 To install the package in Sublime Text, 
 - unzip the Rats.tar.gz file contained in this directory and copy it into your packages directory. 
-- If you do not know where your package directory is located, hit Crtl+Comma to open Settings. You will find the package directory path under Install.  
+- If you do not know where your package directory is located, hit Crtl+ to open the console in Sublime Text to get the path. 
+ 
 - Close and re-open Atom and Rats should show up under View -> Syntax
 
  
 To install the package Atom, 
 - unzip angugage-Rats.tar.gz and copy it into your packages directory. 
-- If you do not know where your package directory is located, hit Crtl+ to open the console in Sublime Text to get the path. 
+- If you do not know where your package directory is located, hit Crtl+Comma to open Settings. You will find the package directory path under Install. 
 - Close and re-open Sublime Text. 
 - Hit Crtl+Shift+L and check if Rats shows up under Grammars. 
 
