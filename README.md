@@ -27,7 +27,7 @@ To install the package Atom,
 - Hit Crtl+Shift+L and check if Rats shows up under Grammars. 
 
 ###Changelog
-2015-11-29 Initial release.
+2016-7-26 Initial release.
   
  
 
