@@ -1,41 +1,30 @@
 #Rats (Estima) Syntax Highlighting
 Christian Danne (dannec@tcd.ie)  
 
-Version: Jul 26 2015  
+Version: Jul 26 2016  
 
 ###Description
-Provides syntax highlighting for [Rats](https://www.estima.com) (Estima) in [Atom](https://atom.io/) and [Sublime Text](https://www.sublimetext.com/) (see screenshot below). 
+Provides syntax highlighting for [Rats](https://www.estima.com) (Estima) in [Atom](https://atom.io/) and [Sublime Text](https://www.sublimetext.com/) (see screenshot below).
 
 ![Screenshot](screenshot.png "Screenshot")
 
 ###Important notes
-Note that only .rpf files will get automatically recognised, since .prg and .src files are primarily associated with other languages. For .prg and .src files, please select the syntax manually. 
+Note that only .rpf files will get automatically recognised, since .prg and .src files are primarily associated with other languages. For .prg and .src files, please select the syntax manually.
 
-If you have suggestions or find any errors, such as missing key words, please contact me at dannec@tcd.ie. 
+If you have suggestions or find any errors, such as missing key words, please contact me at dannec@tcd.ie.
 
 ###Installation instructions
-To install the package in Sublime Text, 
-- unzip the Rats.tar.gz file contained in this directory and copy it into your packages directory. 
-- If you do not know where your package directory is located, hit Crtl+ to open the console in Sublime Text and type ``sublime.packages_path()`` to get the path. 
+To install the package in Sublime Text,
+- unzip the Rats.tar.gz file contained in this directory and copy it into your packages directory.
+- If you do not know where your package directory is located, hit Crtl+ to open the console in Sublime Text and type ``sublime.packages_path()`` to get the path.
 - Close and re-open Sublime Text and Rats should show up under View -> Syntax
 
- 
-To install the package Atom, 
-- unzip langugage-Rats.tar.gz and copy it into your packages directory. 
-- If you do not know where your package directory is located, hit Crtl+Comma to open Settings in Atom. You will find the package directory path under Install. 
-- Close and re-open Atom. 
-- Hit Crtl+Shift+L and check if Rats shows up under Grammars. 
+
+To install the package Atom,
+- unzip langugage-Rats.tar.gz and copy it into your packages directory.
+- If you do not know where your package directory is located, hit Crtl+Comma to open Settings in Atom. You will find the package directory path under Install.
+- Close and re-open Atom.
+- Hit Crtl+Shift+L and check if Rats shows up under Grammars.
 
 ###Changelog
 2016-7-26 Initial release.
-  
- 
-
- 
- 
-
-
- 
-
-
- 
